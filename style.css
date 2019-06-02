@@ -1,78 +1,41 @@
-body
-{
-    background-color: #140404;
-    font-family: comic sans ms;
-    //height: 1000px;
-
+body{
+    background-image: url(images/hover0.jpg);
+   background-size:cover;
+  
 }
-#base{
-    height: 500px;
-    width: 375px;
-    background-color: #f76104;
-    border:2px solid #000;
-    margin-left: 30px; 
-    box-shadow: 0 4px 4px 5px #d30404;
-    text-align: center;
-}
-#main-design{
+#design{
     display: flex;
     justify-content: center;
-
+    align-content: center;
+    margin-top: 200px;
 }
-#heading{
-    background-color: #fff;
-    width: 50%;
+#list li{
+    display: inline;
+}
+#list a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+
+.nav-bar {
     padding: 10px;
-    margin: 20;
-    justify-content:center;
-    display: flex;
-    animation-name: silly-billy;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-H1{
-    text-shadow: 4px 4px 5px #fff ,4px 4px 5px #fff;
-}
-#screen{
-    height: 75px;
-    background-color: #dee5df;
-    margin: 15px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    height: 20px;
+    width: 120px;
+    margin: 30px;
+   position: relative;
+    /* border: 2px solid #fff; */
+    transition:  all  .5s;
+    
+}    
+ 
 
-}
-#buttons{
-    margin: 10px;
-    margin-top:30px;  
-    text-align: center;
+.nav-bar:hover{
+  box-shadow: 0px 2px 8px 2px #fff;
+
 }
 #one{
-   height: 50px; 
-   width: 70px;
-   padding: 20px;
-   margin: 10px;
-   background-color:#2cff02;
-   box-shadow: 0px 3px 3px 5px #f3f3,0px 3px 3px 5px #f3f3
-                 ,4px 4px 5px #f3f3;
-   transition:background-color 2s,box-shadow .5s;
-   
-}
-#one:hover{
-    background-color: #fff;
-    box-shadow: 0px 3px 3px 5px #fff,0px 3px 3px 5px #fff
-    ,4px 4px 5px #fff;
-}
-@keyframes silly-billy{
-    0%{background-color: #fff;}
-    45%{background-color:#01bfff;}
-    75%{background-color: #5538ff;}
-    89%{background-color: #37ffaf;}
-    100%{background-color: #f9bf59;}
-
-}
-@media only screen and (max-width:600px){
-   #heading{
-       width:fit-content;
-   }
+    background-image: url(images/hover1.jpg);
+    background-size: 70px 100px;
 }
